@@ -8,23 +8,199 @@
     <title>Document tailwind</title>
 </head>
 <body>
-    <section class="home__section bg-yellow-100">
-        <div class="container flex justify-center items-center">
-            <div class="home__text__content">
+
+    <header class ="bg-yellow-100 "
+     <!-- Navbar goes here -->
+        <nav class="bg-white shadow-lg">
+                    <div class="max-w-6xl mx-auto px-4">
+                        <div class="flex justify-between">
+                            <div class="flex space-x-7">
+                                <div>
+                                    <!-- Website Logo -->
+                                    <a href="#" class="flex items-center py-4 px-2">
+                                        <img src="./assets/icons/logo.png" alt="Logo" class="h-8 w-8 mr-2"  style="object-fit:cover; width:15rem;">
+                                    </a>
+                                </div>
+                                <!-- Primary Navbar items -->
+                                <div class="hidden md:flex items-center space-x-1">
+                                    <a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
+                                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact Us</a>
+                                </div>
+                            </div>
+                            <!-- Secondary Navbar items -->
+                            <div class="hidden md:flex items-center space-x-3 ">
+                                <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
+                                <a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+                            </div>
+                            <!-- Mobile menu button -->
+                            <div class="md:hidden flex items-center">
+                                <button class="outline-none mobile-menu-button">
+                                <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                                    x-show="!showMenu"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mobile menu -->
+                    <div class="hidden mobile-menu">
+                        <ul class="">
+                            <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+                            <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+                            <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+                            <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+                        </ul>
+                    </div>
+        </nav>
+               
+
+    <section class="container mx-auto md:flex items-center py-12">
+            <div class="home__text__content space-y-4 px-4">
               <h2 class="text-6xl font-bold uppercase">
-                  <span class="text-yellow-700">be the penguin</span> <br>
-                     of the winter
+                  <span class="text-yellow-500">be the penguin</span> <br>
+                   <span class="text-gray-800 font-semibold">  of winter</span>
                  </h2>
-                 <p class="text-tiny">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quidem perspiciatis tempore dolore amet quod?</p>
-                 <button class="bg-green-700 font-bold py-4 px-7 ">BUY NOW</button>
+                 <p class="w-2/3 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quidem perspiciatis tempore dolore amet quod?</p>
+                 <button class="bg-green-700 font-bold py-4 px-7 text-white rounded-md ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg> BUY NOW</button>
             </div>
             <div class="home__img__content">
                 <div class="home__img">
-                    <img src="./assets/img/Image/Mask Group.png" alt="" width="100px">
+                    <img src="./assets/images/model.png" alt="" width="">
                 </div>
             </div>
+        </section>
+    </header>
+    <main>
+    <!-- woman item section -->
+    <section class="woman__item container mx-auto px-4 mt-10 mb-5">
+        <h2 class="text-3xl uppercase text-gray-600 font-bold">Woman jacket</h2>
+        <div class="woman__main__container grid lg:grid-cols-3 gap-7">
+            <div class="woman__item__content shadow-lg rounded-lg p-4 space-y-10">
+                    <div class="item__img ">
+                        <div class="bg-gray-200 rounded-xl mb-4">
+                            <img src="./assets/images/jacket-1.png" alt="">
+                        </div>
+                        <h4 class="text-3xl font-bold">Yellow coat Jacket</h4>
+                        <p class="mt-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab cumque accusamus tempore nisi reprehenderit.</p>
+                    </div>
+
+                    <div class="item__bottom__area flex justify-between">
+                        <div class="price__tag">
+                            <h2 class="text-yellow-500 text-5xl font-bold">$400</h2>
+                        </div>
+                        <div class="btn">
+                            <button class="bg-green-700 font-bold py-4 px-7 text-white rounded-md ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                  </svg> BUY NOW</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="woman__item__content shadow-lg rounded-lg p-4 space-y-10">
+                    <div class="item__img ">
+                        <div class="bg-gray-200 rounded-xl mb-4">
+                            <img src="./assets/images/jacket-2.png" alt="">
+                        </div>
+                        <h4 class="text-3xl font-bold">Yellow coat Jacket</h4>
+                        <p class="mt-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab cumque accusamus tempore nisi reprehenderit.</p>
+                    </div>
+
+                    <div class="item__bottom__area flex justify-between">
+                        <div class="price__tag">
+                            <h2 class="text-yellow-500 text-5xl font-bold">$400</h2>
+                        </div>
+                        <div class="btn">
+                            <button class="bg-green-700 font-bold py-4 px-7 text-white rounded-md ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                  </svg> BUY NOW</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="woman__item__content shadow-lg rounded-lg p-4 space-y-10">
+                    <div class="item__img ">
+                        <div class="bg-gray-200 rounded-xl mb-4">
+                            <img src="./assets/images/jacket-3.png" alt="">
+                        </div>
+                        <h4 class="text-3xl font-bold">Yellow coat Jacket</h4>
+                        <p class="mt-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab cumque accusamus tempore nisi reprehenderit.</p>
+                    </div>
+
+                    <div class="item__bottom__area flex justify-between">
+                        <div class="price__tag">
+                            <h2 class="text-yellow-500 text-5xl font-bold">$400</h2>
+                        </div>
+                        <div class="btn">
+                            <button class="bg-green-700 font-bold py-4 px-7 text-white rounded-md ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                  </svg> BUY NOW</button>
+                        </div>
+                    </div>
+            </div>
         </div>
-      </section>
-  
+    </section>
+    <!-- man item section -->
+
+    <dev class = "bg-yellow-400 py-5">
+        <div class="container mx-auto">
+           <div class="md:grid grid-cols-2">
+               <div class="grid__item flex items-center ">
+                    <div class="feature flex  ml-5">
+                        <div class="feature__icon ">
+                            <img src="../assets/icons/image 12.png" alt="" class="w-20">
+                        </div>
+                        <div class="feature__text ml-5">
+                            <h4 class="">Find the perfect Fit</h4>
+                            <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum perferendis sit officiis quas quisquam modi.</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="grid__item flex items-center  row-span-3">
+                    <div class="py-10">
+                        <img src="../assets/images/shopping.png" alt="">
+                    </div>
+               </div>
+               <div class="grid__item flex items-center ">
+                <div class="feature flex  ml-5">
+                    <div class="feature__icon  ">
+                        <img src="../assets/icons/image 13.png" alt="" class="w-20">
+                    </div>
+                    <div class="feature__text ml-5">
+                        <h4 class="">Find the perfect Fit</h4>
+                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum perferendis sit officiis quas quisquam modi.</p>
+                    </div>
+                </div>
+               </div>
+               <div class="grid__item flex items-center ">
+                <div class="feature flex  ml-5">
+                    <div class="feature__icon ">
+                        <img src="../assets/icons/image 14.png" alt="" class="w-20">
+                    </div>
+                    <div class="feature__text ml-5">
+                        <h4 class="">Find the perfect Fit</h4>
+                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum perferendis sit officiis quas quisquam modi.</p>
+                    </div>
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    </main>
+
+ <script src="./assets/js/main.js"></script>
 </body>
 </html>
